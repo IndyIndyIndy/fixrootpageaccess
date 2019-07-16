@@ -14,7 +14,6 @@ namespace ChristianEssl\Fixrootpageaccess\Xclass;
  * The TYPO3 project - inspiring people to share!
  */
 
-use TYPO3\CMS\Backend\FrontendBackendUserAuthentication;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Type\Bitmask\Permission;
 
@@ -25,7 +24,7 @@ use TYPO3\CMS\Core\Type\Bitmask\Permission;
  * This class contains the configuration of the database fields used plus some
  * functions for the authentication process of backend users.
  */
-class BackendUserAuthentication extends FrontendBackendUserAuthentication
+class BackendUserAuthentication extends \TYPO3\CMS\Core\Authentication\BackendUserAuthentication
 {
     /**
      * Checks if the page id, $id, is found within the webmounts set up for the user.
