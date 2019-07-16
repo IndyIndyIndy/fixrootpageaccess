@@ -1,0 +1,35 @@
+{
+    "name": "christianessl/fixrootpageaccess",
+    "type": "typo3-cms-extension",
+    "description": "Resolves #87985 on Forge, where editors cannot save changes on the root page of multilanguage sites.",
+    "keywords": [
+        "TYPO3",
+        "extension"
+    ],
+    "license": ["GPL-2.0-or-later"],
+    "homepage": "https://christianessl.at",
+    "authors": [
+        {
+            "name": "Christian Essl",
+            "role": "Developer"
+        }
+    ],
+    "version": "0.1.0",
+    "require": {
+        "typo3/cms-core": "^8.7.0|| ^9.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChristianEssl\\Fixrootpageaccess\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChristianEssl\\Fixrootpageaccess\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "fixrootpageaccess": "self.version",
+        "typo3-ter/fixrootpageaccess": "self.version"
+    }
+}
